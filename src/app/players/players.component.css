@@ -1,0 +1,10 @@
+.ulData {
+    list-style: none;
+}
+.liData {
+    display: flex;
+    justify-content: start;
+}
+strong {
+    padding-right: 5px;
+}

@@ -1,0 +1,47 @@
+<div class="card" style="width: 18rem;">
+  <ul *ngFor="let player of players; let i = index" class="list-group list-group-flush">
+    <li class="list-group-item">
+      <strong> Full Name: </strong>{{player.fullName}}</li>
+    <li class="list-group-item">
+      <strong> Team: </strong>{{player.stats[0].splits[0].team.name}}</li>
+    <li class="list-group-item">
+      <strong> Opponent Team: </strong>{{player.stats[0].splits[0].opponent.name}}</li>
+     <li class="list-group-item">
+      <strong> Avg: </strong>{{ player.stats[0].splits[0].stat.avg}}</li>
+    <!--<li class="list-group-item">
+      <strong> LastName: </strong>{{ player.lastName }}</li>
+    <li class="list-group-item">
+      <strong> Primary Number: </strong>{{ player.primaryNumber}}</li>
+    <li class="list-group-item">
+      <strong> BirthDate: </strong>{{ player.birthDate }}</li>
+    <li class="list-group-item">
+      <strong> Current Age: </strong>{{ player.currentAge }}</li>
+    <li class="list-group-item">
+      <strong> Birth City: </strong>{{player.birthCity }}</li>
+    <li class="list-group-item">
+      <strong> Birth Country: </strong>{{ player.birthCountry }}</li>
+    <li class="list-group-item">
+      <strong> Height: </strong>{{player.height }}</li>
+    <li class="list-group-item">
+      <strong> Link APi: </strong>{{player.link}}</li>-->
+      <li>
+    <ul class="list-group list-group-flush"  >
+      <li class="list-group-item">
+        <strong> Game Date: </strong>{{player.stats[0].splits[player.stats[0].splits.length - 1].date}}</li>
+      <li class="list-group-item">
+        <strong> At Bats: </strong>{{player.stats[0].splits[player.stats[0].splits.length - 1].stat.atBats}}</li>
+      <li class="list-group-item">
+        <strong> Hits: </strong>{{player.stats[0].splits[player.stats[0].splits.length - 1].stat.hits}}</li>
+      <li class="list-group-item">
+        <strong> Home Runs: </strong>{{player.stats[0].splits[player.stats[0].splits.length - 1].stat.homeRuns}}</li>
+      <li class="list-group-item">
+        <strong> Base on Balls: </strong>{{player.stats[0].splits[player.stats[0].splits.length - 1].stat. baseOnBalls}}</li>
+      <li class="list-group-item">
+        <strong> StrikeOuts: </strong>{{player.stats[0].splits[player.stats[0].splits.length - 1].stat. strikeOuts}}</li>
+      <li>{{i}}</li>
+    </ul> 
+  </li>
+
+  </ul>
+
+</div>
