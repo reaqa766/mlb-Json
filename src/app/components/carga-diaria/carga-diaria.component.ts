@@ -16,7 +16,7 @@ export class CargaDiariaComponent implements OnInit {
   selectedGroup: any;
   elarray: any;
   datesN: number = 10;
-  public y=0;
+  
 
   constructor(private playerService: PlayersService) { }
 
