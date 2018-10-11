@@ -16,14 +16,32 @@ export class CargaDiariaComponent implements OnInit {
   selectedGroup: any;
   elarray: any;
   datesN: number = 10;
-  
+  searchText: string;
+  playerAuxList = [];
 
+  playersList = [
+    {name:"Jose Altuve",
+    position : "segunda base"},
+    
+    {name : "Gleyber Torres",
+    position : "segunda base"},
+
+    {name : "Ronald Acuña Jr.",
+    position : "Leftfield"},
+
+    {name : "Ender Inciarte",
+    position : "Centerfield"}
+
+  ]
+  
+  
   constructor(private playerService: PlayersService) { }
 
   ngOnInit() {
     // this.playerService.getPlayerDaily();
     this.getPlayersMap();
     console.log('tres', this.players);
+    this.playerAuxList=this.playersList;
   }
 
   //Convertir el Array de Observables a un Array de Objetos. Seleccionar los items necesarios del nuevo Array (con todo el contenido del Json) y colocarlos en un nuevo Array
@@ -47,4 +65,24 @@ export class CargaDiariaComponent implements OnInit {
     }
   }
 
+  filterPositions(positions:string) {
+    for(let player of this.playersList) {
+      if ( player.position == positions)
+      { this.playerAuxList.push(player)
+
+      }
+
+    }
+
+  }
+  
+
 }
+  
+
+
+
+
+
+
+

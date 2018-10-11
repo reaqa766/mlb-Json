@@ -13,12 +13,37 @@ export class PlayersService {
   gameCode = 563385;
 
 
+  playersList = [
+    {name:"Jose Altuve",
+    position : "segunda base"},
+    
+    {name : "Gleyber Torres",
+    position : "segunda base"},
+
+    {name : "Ronald Acuña Jr.",
+    position : "Leftfield"},
+
+    {name : "Ender Inciarte",
+    position : "Centerfield"}
+
+  ]
+
+
+
   // Array de Codigo de Jugadores
   private playersCode = [
     503556,
     514888,
     660670,
-    400121
+    400121,
+    471865,
+    608566,
+    503556,
+    541650,
+    542583,
+    606115,
+    453568,
+    571448,
   ]
 
   // Url del Api con los datos de cada juego para un Jugador particular

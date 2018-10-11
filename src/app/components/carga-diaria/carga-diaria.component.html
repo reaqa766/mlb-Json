@@ -1,143 +1,244 @@
 <div class="container">
   <div class="navigation-bar1">
-    <div class="nav-bar-item"><a href="#">HOME</a></div>
-    <div class="nav-bar-item"><a href="#">LISTA J</a></div>
-    <div class="nav-bar-item"><a href="#">J POSICION</a></div>
     <div class="nav-bar-item">
-      <a href="#">ACT DIARIA</a></div>
-      <div class="nav-bar-item">
-          <a href="#">ACT TEMP</a>
+      <a href="#">HOME</a>
     </div>
-    <div class="nav-bar-item"><a href="#">NOSOTROS</a></div>
-
+    <div class="nav-bar-item">
+      <a href="#">LISTA J</a>
+    </div>
+    <div class="nav-bar-item">
+      <a href="#">J POSICION</a>
+    </div>
+    <div class="nav-bar-item">
+      <a href="#">ACT DIARIA</a>
+    </div>
+    <div class="nav-bar-item">
+      <a href="#">ACT TEMP</a>
+    </div>
+    <div class="nav-bar-item">
+      <a href="#">NOSOTROS</a>
+    </div>
   </div>
 </div>
 
+<div class="grid-container ">
+  <div class="grid-items">
+    <h3>LISTA DE JUGADORES</h3>
+    <div class="grid-item-box">
+      <ul class="ul-Grid-Container" *ngFor="let player of players; let i=index" >
+        <li class="li-grid-item" *ngIf="i>5 &&  i<10">
+          <h6>{{player.fullName}}</h6>
+        </li>
+        <li class="li-grid-item" *ngIf="i>5 && i<10">
+          <strong>EDAD: </strong> {{player.currentAge}}   Años  
+        </li>
+        <li class="li-grid-item" *ngIf="i>5 && i<10">
+          <strong>NICKNAME: </strong>{{player.nickName}} 
+        </li>
+        <li class="li-grid-item" *ngIf="i>5 && i<10">
+          <strong>Estatura: </strong>{{player.height}} 
+        </li>
+        <li class="li-grid-item" *ngIf="i>5 && i<10">
+          <strong>NUMERO: </strong>{{player.primaryNumber}} 
+        </li>
+        <li class="li-grid-item" *ngIf="i>5 && i<10">
+          <strong>LUGAR NACIMIENTO: </strong>{{player.birthCity}} 
+        </li>
+        <li class="li-grid-item" *ngIf="i>5 && i<10">
+          <strong>FECHA NACIMIENTO: </strong>{{player.birthDate}} 
+        </li>
+        <li class="li-grid-item" *ngIf="i>5 && i<10">
+          <strong>EDAD: </strong>{{player.currentAge}} Años
+        </li>
+        <li class="li-grid-item" *ngIf="i>5 && i<10">
+          <strong>PESO: </strong>{{player.weight}} Libras
+        </li>
+      </ul>
+    </div>
 
-<div class="grid-container">
-  <div class="grid-items">
-    <h3>J POSICION</h3>
-    
-    <ul class="ul-Grid-Container">
-      <h6>RAFAEL QUINTERO</h6>
-      <li class="li-grid-item">
-        <strong>NOMBRE: </strong> 
-      </li>
-      <li class="li-grid-item">
-        <strong>POSICION: </strong> 
-      </li>
-      <li class="li-grid-item">
-        <strong>NOMBRE: </strong> 
-      </li>
-      <li class="li-grid-item">
-        <strong>POSICION: </strong> 
-      </li>
-      <li class="li-grid-item">
-        <strong>NOMBRE: </strong> 
-      </li>
-      <li class="li-grid-item">
-        <strong>POSICION: </strong> 
-      </li>
-      <li class="li-grid-item">
-        <strong>NOMBRE: </strong> 
-      </li>
-      <li class="li-grid-item">
-        <strong>POSICION: </strong> 
-      </li>
-    </ul>
+    <!-- <div class="grid-item-box">
+      <ul class="ul-Grid-Container">
+        <li class="li-grid-item">
+          <h6>RONALD ACUÑA Jr.</h6>
+        </li>
+        <li class="li-grid-item">
+          <strong>EDAD: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>NICKNAME: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>EQUIPO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>POSICION: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>LUGAR NACIMIENTO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>FECHA NACIMIENTO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>FILDEO:</strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>BATEO: </strong>
+        </li>
+      </ul>
+    </div>
+    <div class="grid-item-box">
+      <ul class="ul-Grid-Container">
+        <li class="li-grid-item">
+          <h6>CARLOS CARRASCO</h6>
+        </li>
+        <li class="li-grid-item">
+          <strong>EDAD: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>NICKNAME: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>EQUIPO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>POSICION: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>LUGAR NACIMIENTO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>FECHA NACIMIENTO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>FILDEO:</strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>BATEO: </strong>
+        </li>
+      </ul>
+    </div>
+    <div class="grid-item-box">
+      <ul class="ul-Grid-Container">
+        <li class="li-grid-item">
+          <h6>JOULYS CHACIN</h6>
+        </li>
+        <li class="li-grid-item">
+          <strong>EDAD: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>NICKNAME: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>EQUIPO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>POSICION: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>LUGAR NACIMIENTO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>FECHA NACIMIENTO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>FILDEO:</strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>BATEO: </strong>
+        </li>
+      </ul>
+    </div>
+    <div class="grid-item-box">
+      <ul class="ul-Grid-Container">
+        <li class="li-grid-item">
+          <h6>GLEYBER TORRES</h6>
+        </li>
+        <li class="li-grid-item">
+          <strong>EDAD: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>NICKNAME: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>EQUIPO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>POSICION: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>LUGAR NACIMIENTO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>FECHA NACIMIENTO: </strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>FILDEO:</strong>
+        </li>
+        <li class="li-grid-item">
+          <strong>BATEO: </strong>
+        </li>
+      </ul>
+    </div> -->
+
+    <!-- <div class="container-pagination">
+      <div class="container">
+        <nav aria-label="Demo of Bootstrap 4 Navigation">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">Prev</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#"  >1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">5</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">6</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">7</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> -->
+
   </div>
   <div class="grid-items">
-      <h3>LISTA DE JUGADORES</h3>
+    <h3>JUGADORES POR POSICION</h3>
+    <div class="grid-item-box-posicion">
+      <p class="items-posicion1">POSICION</p>
+      <input class="input-posicion"  OnChange="filterPositions()" type="text" placeholder="Search..">
+    </div>
+    <div class="grid-item-box1">
+      <p class="items-posicion1">JUGADOR(ES)</p>
+      <!-- <div class="grid-item-box-posicion"> -->
+        <ul class="ul-Grid-Container2" *ngFor="let player of playerAuxList ">
+          <li class="li-grid-item-posicion">
+            <strong class="strong-grid-item-posicion" >{{player.name}}</strong>
+          </li>
+          <!-- <li class="li-grid-item-posicion">
+            <strong class="strong-grid-item-posicion">GLEYBER TORRES</strong>
+          </li> -->
+        </ul>
+      <!-- </div> -->
+    </div>
   </div>
-  <div class="grid-items"></div>
-  <div class="grid-items"></div>
-  <div class="grid-items"></div>
-  <!-- <div class="grid-items"></div>
-  <div class="grid-items"></div>
-  <div class="grid-items"></div> -->
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="container2"> -->
-
-
-
-
-
-
-
-<!-- <div class="container">
-  <div class="item-grid1"></div>
-  <div class="item-grid2"></div>
-  <div class="item-grid3"></div>
-  <div class="item-grid4"></div>
-  <div class="item-grid5"></div>
-  <div class="item-grid6"></div>
-  <div class="item-grid7"></div>
-  <div class="item-grid8"></div>
-  <div class="item-grid9"></div>
-  <div class="item-grid10"></div>
-  <div class="item-grid11"></div>
-  <div class="item-grid12"></div>
-  <div class="item-grid13"></div>
-  <div class="item-grid14"></div>
-  <div class="item-grid15"></div>
-  <div class="item-grid16"></div>
-  <div class="item-grid17"></div>
-  <div class="item-grid18"></div>
-  <div class="item-grid19"></div>
-  <div class="item-grid20"></div>
-  <div class="item-grid21"></div>
-  <div class="item-grid22"></div>
-  <div class="item-grid23"></div>
-  <div class="item-grid24"></div>
-</div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -150,8 +251,8 @@
     <li class="list-group-item">
       <strong> Opponent Team: </strong>{{player.stats[0].splits[0].opponent.name}}</li>
      <li class="list-group-item">
-      <strong> Avg: </strong>{{ player.stats[0].splits[0].stat.avg}}</li> -->
-    <!--<li class="list-group-item">
+      <strong> EDAD: </strong>{{ player.stats[0].splits[0].stat.EDAD}}</li> -->
+<!--<li class="list-group-item">
       <strong> LastName: </strong>{{ player.lastName }}</li>
     <li class="list-group-item">
       <strong> Primary Number: </strong>{{ player.primaryNumber}}</li>
@@ -167,7 +268,7 @@
       <strong> Height: </strong>{{player.height }}</li>
     <li class="list-group-item">
       <strong> Link APi: </strong>{{player.link}}</li>-->
-      <!-- <li>
+<!-- <li>
     <ul class="list-group list-group-flush"  >
       <li class="list-group-item">
         <strong> Game Date: </strong>{{player.stats[0].splits[player.stats[0].splits.length - 1].date}}</li>
