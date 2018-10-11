@@ -6,11 +6,11 @@ import {  Component, EventEmitter, Input, Output  } from '@angular/core';
   styleUrls: ['./pagination.component.css']
 })
 export class PaginationComponent {
-  @Input() page: number; // the current page
-  @Input() count: number; // how many total items there are in all pages
-  @Input() perPage: number; // how many items we want to show per page
-  @Input() pagesToShow: number; // how many pages between next/prev
-  @Input() loading: boolean; // check if content is being loaded
+  @Input() page: number = 1; // the current page
+  @Input() count: number = 1; // how many total items there are in all pages
+  @Input() perPage: number = 5; // how many items we want to show per page
+  @Input() pagesToShow: number = 1; // how many pages between next/prev
+  @Input() loading: boolean = true; // check if content is being loaded
 
 
   @Output() goPrev = new EventEmitter<boolean>();

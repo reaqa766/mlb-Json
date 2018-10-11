@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PlayersService } from '../../services/players.service';
-import { take } from 'rxjs/operators'
-import { Players } from '../../interfaces/players'
+import { take } from 'rxjs/operators';
+import { Players } from '../../interfaces/players';
+import { PaginationComponent } from '../pagination/pagination.component';
 
 
 @Component({
