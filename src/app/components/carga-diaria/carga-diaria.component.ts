@@ -19,6 +19,12 @@ export class CargaDiariaComponent implements OnInit {
   datesN: number = 10;
   searchText: string;
   playerAuxList = [];
+  counter: number;
+  n: number;
+  m: number;
+  n1: number = 12;
+  n10: number = 5;
+  
 
   playersList = [
     {name:"Jose Altuve",
@@ -43,6 +49,9 @@ export class CargaDiariaComponent implements OnInit {
     this.getPlayersMap();
     console.log('tres', this.players);
     this.playerAuxList=this.playersList;
+    if (this.counter=1) {
+
+    }
   }
 
   //Convertir el Array de Observables a un Array de Objetos. Seleccionar los items necesarios del nuevo Array (con todo el contenido del Json) y colocarlos en un nuevo Array
@@ -76,6 +85,10 @@ export class CargaDiariaComponent implements OnInit {
     }
 
   }
+  // clickPaginattion() {
+  //   let co= 
+  //   this.counter = 
+  // }
   
 
 }

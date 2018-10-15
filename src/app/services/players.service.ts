@@ -13,20 +13,20 @@ export class PlayersService {
   gameCode = 563385;
 
 
-  playersList = [
-    {name:"Jose Altuve",
-    position : "segunda base"},
+  // playersList = [
+  //   {name:"Jose Altuve",
+  //   position : "segunda base"},
     
-    {name : "Gleyber Torres",
-    position : "segunda base"},
+  //   {name : "Gleyber Torres",
+  //   position : "segunda base"},
 
-    {name : "Ronald Acuña Jr.",
-    position : "Leftfield"},
+  //   {name : "Ronald Acuña Jr.",
+  //   position : "Leftfield"},
 
-    {name : "Ender Inciarte",
-    position : "Centerfield"}
+  //   {name : "Ender Inciarte",
+  //   position : "Centerfield"}
 
-  ]
+  // ]
 
 
 
@@ -37,12 +37,21 @@ export class PlayersService {
     660670,
     400121,
     471865,
+    453567,
     608566,
+    453565,
+    453563,
     503556,
     541650,
     542583,
     606115,
     453568,
+    453566,
+    453564,
+    453562,
+    453561,
+    453550,
+    453551,
     571448,
   ]
 
